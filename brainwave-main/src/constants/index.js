@@ -1,28 +1,33 @@
-/* eslint-disable no-unused-vars */
+
 import {
   benefitIcon1,
   benefitIcon2,
   benefitIcon3,
-  benefitIcon4,
+  // benefitIcon4,
   benefitImage2,
   chromecast,
   disc02,
   discord,
   discordBlack,
   facebook,
-  figma,
+
+  msgg,
+  discuss,
+  files,
+  userProIcon,
+  codeBlock,
+  helpCenter,
+  notion,
+
   file02,
-  framer,
   homeSmile,
   instagram,
   notification2,
   notification3,
   notification4,
-  notion,
-  photoshop,
+
+
   plusSquare,
-  protopie,
-  raindrop,
   recording01,
   recording03,
   roadmap1,
@@ -30,11 +35,12 @@ import {
   roadmap3,
   roadmap4,
   searchMd,
-  slack,
   sliders04,
   telegram,
   twitter,
   yourlogo,
+ 
+  
 } from "../assets";
 
 export const navigation = [
@@ -129,31 +135,35 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "Experience streamlined voting and robust privacy, making it the ideal platform for student participation.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "Streamlined Complaint Tracking",
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Integrate Feedback Effortlessly",
+    text: collabText,
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Automated Voting Process",
+  },
+  {
+    id: "3",
+    title: "Secure and Reliable Platform",
   },
 ];
 
 export const collabApps = [
   {
     id: "0",
-    title: "Figma",
-    icon: figma,
-    width: 26,
-    height: 36,
+    title: "Feedback",
+    icon: msgg, 
+    width: 36,
+    height: 26,
   },
   {
     id: "1",
@@ -171,40 +181,42 @@ export const collabApps = [
   },
   {
     id: "3",
-    title: "Slack",
-    icon: slack,
-    width: 34,
-    height: 35,
+    title: "Notes",
+    icon: discuss,
+    width: 36,
+    height: 36,
   },
+
   {
     id: "4",
-    title: "Photoshop",
-    icon: photoshop,
+    title: "Documents",
+    icon: files, 
     width: 34,
     height: 34,
   },
   {
     id: "5",
-    title: "Protopie",
-    icon: protopie,
+    title: "User Profiles",
+    icon: userProIcon, 
     width: 34,
     height: 34,
   },
   {
     id: "6",
-    title: "Framer",
-    icon: framer,
+    title: "Code Block",
+    icon: codeBlock, 
     width: 26,
-    height: 34,
+    height: 26,
   },
   {
     id: "7",
-    title: "Raindrop",
-    icon: raindrop,
-    width: 38,
-    height: 32,
+    title: "Help Center",
+    icon: helpCenter, 
+    width: 34,
+    height: 34,
   },
 ];
+
 
 export const pricing = [
   {

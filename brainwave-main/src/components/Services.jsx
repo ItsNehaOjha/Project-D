@@ -16,8 +16,8 @@ const Services = () => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          title="Empowering Student Voices"
+          text=" UPVOTE creates a dynamic space for student engagement, collaboration, and feedback"
         />
 
         <div className="relative">
@@ -35,7 +35,7 @@ const Services = () => {
             <div className="relative z-1 max-w-[17rem] ml-auto">
               <h4 className="h4 mb-4">Smartest AI</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+              UPVOTE creates a dynamic space for student engagement, collaboration, and feedback
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (
