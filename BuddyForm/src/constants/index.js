@@ -212,3 +212,49 @@ export const benefits = [
    
   ];
   
+
+  export const complainFormInput = [
+    {
+      type: "text",
+      id: "name",
+      label: "Name",
+      placeholder: "Enter your name",
+      required: true,
+    },
+    {
+      type: "text",
+      id: "feedbackId",
+      label: "Feedback ID",
+      placeholder: "Enter feedback ID",
+      required: true,
+    },
+    // Add the select dropdown for Subject
+    {
+      type: "select",
+      id: "subject",
+      label: "Subject",
+      options: [
+        { value: "", label: "Select a subject" },
+        { value: "Bug Report", label: "Bug Report" },
+        { value: "Feature Request", label: "Feature Request" },
+        { value: "General Inquiry", label: "General Inquiry" },
+        { value: "Other", label: "Other" },
+      ],
+      required: true,
+      // Add a special flag to show "Other" input field conditionally
+      showOtherInput: true,
+    },
+    {
+      type: "textarea",
+      id: "description",
+      label: "Description/Attachments",
+      placeholder: "Describe your issue or attach a file...",
+      rows: 6,
+      required: true,
+    },
+  ];
+  
+  
+
+  
+  
