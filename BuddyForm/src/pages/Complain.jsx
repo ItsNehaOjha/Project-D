@@ -5,6 +5,7 @@ import Heading from "../component/Heading";
 import gridBackground from "../assets/grid.png";
 import policy from "../assets/paper.jpg";
 import { complainFormInput } from "../constants/index.js";
+import OldComplain from "../component/OldComplain.jsx";
 
 const ComplainForm = () => {
   const [formData, setFormData] = useState({
@@ -158,7 +159,7 @@ const ComplainForm = () => {
               </div>
 
               {/* File and Submit */}
-              <div className="flex justify-between items-center">
+              <div className="flex mt-6 justify-between items-center">
                 <div>
                   <input
                     type="file"
@@ -167,7 +168,7 @@ const ComplainForm = () => {
                     className="hidden"
                   />
                   <label htmlFor="attachments" className="cursor-pointer">
-                    <Button white className="opacity-65">Attachments</Button>
+                    <Button white className="opacity-65 ">Attachments</Button>
                   </label>
                 </div>
 
@@ -177,6 +178,7 @@ const ComplainForm = () => {
           </div>
         </div>
       </div>
+      <OldComplain/>
     </Section>
   );
 };

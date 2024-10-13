@@ -2,7 +2,7 @@ import Section from "./Section";
 import Button from "./Button";
 import HeaderImage from "../assets/hero/HeaderAnimated.svg";
 import curve from "../assets/hero/curve.png";
-import heroBackground from "../assets/hero/hero-bg.jpeg";
+
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
@@ -78,15 +78,7 @@ const Hero = () => {
             </div>
             <Gradient className=" hidden " />
           </div>
-          <div className="hidden lg:block absolute -top-[200%] left-1/2 w-[241%] -translate-x-1/2 md:top-0 md:w-[138%] lg:-top-[117%]">
-            <img
-              src={heroBackground}
-              className="w-full max-h-full"
-              width={1440}
-              height={1800}
-              alt="hero"
-            />
-          </div>
+          
           <BackgroundCircles />
         </div>
         <Counter className=" hidden  "/>

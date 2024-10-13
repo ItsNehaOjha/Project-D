@@ -105,7 +105,7 @@ export const benefits = [
       icon: msgg, 
       width: 36,
       height: 26,
-      url: "/feedback", 
+      url: "/contact", 
     },
     {
       id: "1",
@@ -222,13 +222,13 @@ export const benefits = [
       required: true,
     },
     {
-      type: "text",
-      id: "feedbackId",
-      label: "Feedback ID",
-      placeholder: "Enter feedback ID",
+      type: "email",
+      id: "emailId",
+      label: "Email Id",
+      placeholder: "Enter email",
       required: true,
     },
-    // Add the select dropdown for Subject
+   
     {
       type: "select",
       id: "subject",
@@ -244,6 +244,7 @@ export const benefits = [
       // Add a special flag to show "Other" input field conditionally
       showOtherInput: true,
     },
+    
     {
       type: "textarea",
       id: "description",
@@ -251,9 +252,55 @@ export const benefits = [
       placeholder: "Describe your issue or attach a file...",
       rows: 6,
       required: true,
+    
     },
   ];
   
+  
+  export const oldComplaints = [
+    {
+      id: "0",
+      title: "Fees Related Problem",
+      text: "Issues regarding late fee submission or incorrect fees charged.",
+      backgroundUrl: "./src/assets/benefits/card-1.svg",
+      buttonText: "5 Votes",
+    },
+    {
+      id: "1",
+      title: "Books Not Available",
+      text: "Important textbooks or reference materials are not available in the library.",
+      backgroundUrl: "./src/assets/benefits/card-2.svg",
+      buttonText: "7 Votes",
+    },
+    {
+      id: "2",
+      title: "WiFi Issues",
+      text: "Frequent disconnections and low speeds affecting the campus WiFi.",
+      backgroundUrl: "./src/assets/benefits/card-3.svg",
+      buttonText: "15 Votes",
+    },
+    {
+      id: "3",
+      title: "Hostel Room Cleanliness",
+      text: "Complaints regarding improper or irregular cleaning of hostel rooms.",
+      backgroundUrl: "./src/assets/benefits/card-4.svg",
+      buttonText: "23 Votes",
+    },
+    {
+      id: "4",
+      title: "Mess Food Quality",
+      text: "Poor quality food being served in the mess affecting student health.",
+      backgroundUrl: "./src/assets/benefits/card-5.svg",
+      buttonText: " 12 Votes",
+    },
+    {
+      id: "5",
+      title: "Lab Equipment Not Functioning",
+      text: "Complaints about malfunctioning lab equipment affecting practicals.",
+      backgroundUrl: "./src/assets/benefits/card-6.svg",
+      buttonText: " 12 Votes",
+    },
+  ];
   
 
   

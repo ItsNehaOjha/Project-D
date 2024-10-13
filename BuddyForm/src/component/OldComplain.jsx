@@ -1,22 +1,21 @@
-import { benefits } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
+import { oldComplaints } from "../constants";
+import ClipPath from "../assets/svg/ClipPath";
+import { Link } from "react-router-dom";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
-import ClipPath from "../assets/svg/ClipPath";
-import { Link } from "react-router-dom"; 
+import Button from "../component/Button";
 
-const Benefits = () => {
+const OldComplain = () => {
   return (
-    <Section id="features">
-      <div className="container relative z-2">
-        <Heading
-          className="md:max-w-md lg:max-w-2xl"
-          title="Get Everything at one place"
+   <Section crosses>
+       <Heading
+        title="Vote On relavent Complain"
         />
 
-        <div className="flex justify-center flex-wrap gap-8 mb-10">
-          {benefits.map((item) => (
+        <div className="flex justify-center flex-wrap gap-8 mb-10"> 
+        {oldComplaints.map((item) => (
             <div
               className="block relative p-2.5 bg-no-repeat bg-[length:100%_100%] max-w-[21rem] md:max-w-[22rem] group"
               style={{
@@ -30,13 +29,7 @@ const Benefits = () => {
                 <div className="flex items-center mt-auto">
                   {/* Link to corresponding page */}
                   <Link to={item.id === "0" ? "/complain" : item.id === "1" ? "/notes" : "/features"}>
-                    <img
-                      className="cursor-pointer"
-                      src={item.iconUrl}
-                      width={48}
-                      height={48}
-                      alt={item.title}
-                    />
+                    <Button>Upvote</Button>
                   </Link>
                   
                   <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
@@ -72,9 +65,8 @@ const Benefits = () => {
             </div>
           ))}
         </div>
-      </div>
-    </Section>
-  );
-};
+   </Section>
+  )
+}
 
-export default Benefits;
+export default OldComplain
